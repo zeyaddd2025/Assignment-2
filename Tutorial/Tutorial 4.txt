@@ -1,0 +1,23 @@
+ * @author Student
+ */
+public class JavaApplication118 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter diamter and hight");
+        double d = input.nextDouble();
+        double h = input.nextDouble();    
+        double vol = cylindervolume(d,h);
+        System.out.println("volume is"+ vol);
+    }
+    public static double cylindervolume(double d, double h){
+    double volume =  Math.PI*Math.pow(d/2, 2);
+    return volume;
+            
+    
+    
+}}
